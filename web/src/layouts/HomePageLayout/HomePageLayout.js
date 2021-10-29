@@ -4,7 +4,6 @@ const HomePageLayout = ({ children }) => {
       <div className="rounded-lg shadow-lg mb-2 sm:mx-8 h-screen bg-fall-colors">
         <p>Testing</p>
       </div>
-      {children}
     </div>
   )
 }

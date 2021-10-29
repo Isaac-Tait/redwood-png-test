@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const heroPatterns = require('tailwindcss-hero-patterns/src/patterns')
 
 module.exports = {
   mode: 'jit',
@@ -18,6 +19,11 @@ module.exports = {
       red: colors.rose,
       blue: colors.blue,
     },
+    heroPatterns: {
+      topography: heroPatterns.topography,
+    },
+    heroPatternsShades: ['200', '400'],
+    heroPatternsColors: ['green', 'yellow'],
     extend: {
       fontFamily: {
         sans: ['Avenir', ...defaultTheme.fontFamily.sans],
